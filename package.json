@@ -1,0 +1,20 @@
+{
+  "name": "testexpress",
+  "version": "1.0.0",
+  "description": "just a test",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mocha": "^6.0.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.15",
+    "request": "^2.88.0"
+  }
+}
