@@ -15,6 +15,8 @@ Go to the project folder and run the following command:
 ## Usage
 After installation make the requests to the following endpoints:
 
+### https://documenter.getpostman.com/view/2007242/S11NPHWg -> this link contains all of the API available endpoint with Examples
+
 
 | Description | Endpoint | Body |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
