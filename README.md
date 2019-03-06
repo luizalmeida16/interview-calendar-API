@@ -20,7 +20,8 @@ After installation make the requests to the following endpoints:
 |---------------------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | insert Candidates | POST http://localhost:9000/candidates | {"name": "Candidate test", "availability": [   {"day":"2019/05/04", "from":"1pm", "to":"4pm"},   {"day":"2019/05/05", "from":"9am", "to":"2pm"}, ] } |
 | insert Interviewers | POST http://localhost:9000/interviewers | {"name": "Interviewer test", "availability": [ {"day":"2019/05/04", "from":"2pm", "to":"3pm"}, {"day":"2019/05/05", "from":"8am", "to":"10am"} ] } |
-| get interview time slot matches | GET http://localhost:3000/candidates/${candidateId}/matches?interviewers=Interviewer test,Interviewer test2 |  |
+| get interview time slot matches | GET http://localhost:9000/candidates/${candidateId}/matches?interviewers=Interviewer test,Interviewer test2 | Returns a list of availability |
+| get Candidates List | GET http://localhost:9000/candidates | Returns a list of candidates |
 
 Recommended software to make API requests: Postman<br>Get postman free: https://www.getpostman.com/apps
 
