@@ -5,8 +5,8 @@ A simple interview calendar API
 * Docker -> (https://www.docker.com/)
 
 ## Installation
-Clone this repository and install the project with the following command:
-* run command docker-compose up
+Clone this repository and then install the project with the following command:
+* docker-compose up
 
 #### Run tests
 Go to the project folder and run the following command:
@@ -15,7 +15,7 @@ Go to the project folder and run the following command:
 ## Usage
 After installation make the requests to the following endpoints:
 
-##The following link contains all of the API available endpoint with Examples:
+## The following link contains all of the API available endpoint with Examples:
 
 ### https://documenter.getpostman.com/view/2007242/S11NPHWg
 
