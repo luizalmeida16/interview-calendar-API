@@ -16,11 +16,11 @@ Go to the project folder and run the following command:
 After installation make the requests to the following endpoints:
 
 
-| Description | Endpoint | Body | Response |
-|---------------------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| insert Candidates | POST http://localhost:9000/candidates | {"name": "Candidate test", "availability": [   {"day":"2019/05/04", "from":"1pm", "to":"4pm"},   {"day":"2019/05/05", "from":"9am", "to":"2pm"}, ] } |  |
-| insert Interviewers | POST http://localhost:9000/interviewers | {"name": "Interviewer test", "availability": [ {"day":"2019/05/04", "from":"2pm", "to":"3pm"}, {"day":"2019/05/05", "from":"8am", "to":"10am"} ] } |  |
-| get interview time slot matches | GET http://localhost:3000/candidates/${candidateId}/matches?interviewers=Interviewer test,Interviewer test2 |  | {   "day": "2019/05/04",   "from": "13PM",   "to": "14PM" }, {  "day": "2019/05/04",    "from": "14PM",    "to": "15PM"} |
+| Description | Endpoint | Body |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| insert Candidates | POST http://localhost:9000/candidates | {"name": "Candidate test", "availability": [   {"day":"2019/05/04", "from":"1pm", "to":"4pm"},   {"day":"2019/05/05", "from":"9am", "to":"2pm"}, ] } |
+| insert Interviewers | POST http://localhost:9000/interviewers | {"name": "Interviewer test", "availability": [ {"day":"2019/05/04", "from":"2pm", "to":"3pm"}, {"day":"2019/05/05", "from":"8am", "to":"10am"} ] } |
+| get interview time slot matches | GET http://localhost:3000/candidates/${candidateId}/matches?interviewers=Interviewer test,Interviewer test2 |  |
 
 Recommended software to make API requests: Postman<br>Get postman free: https://www.getpostman.com/apps
 
