@@ -15,17 +15,12 @@ Go to the project folder and run the following command:
 ## Usage
 After installation make the requests to the following endpoints:
 
-       Method         |                     Endpoint                      | http status
---------------------- | ------------------------------------------------- | -----------
-Get data by index     | GET http://localhost:8080/v1/data/{index}         |200 -> success<br>404 -> index not found<br>400 -> bad request<br> 500 -> Internal server error
-List data             | GET http://localhost:8080/v1/data                 |200 -> success<br>500 -> Internal server error
 
-
-| Description                     | Endpoint                                                                                                    | Body                                                                                                                                                 | Response                                                                                                                   |   |
-|---------------------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|---|
-| insert Candidates               | POST http://localhost:9000/candidates                                                                       | {"name": "Candidate test", "availability": [   {"day":"2019/05/04", "from":"1pm", "to":"4pm"},   {"day":"2019/05/05", "from":"9am", "to":"2pm"}, ] } |                                                                                                                            |   |
-| insert Interviewers             | POST http://localhost:9000/interviewers                                                                     | {"name": "Interviewer test", "availability": [ {"day":"2019/05/04", "from":"2pm", "to":"3pm"}, {"day":"2019/05/05", "from":"8am", "to":"10am"} ] }   |                                                                                                                            |   |
-| get interview time slot matches | GET http://localhost:3000/candidates/${candidateId}/matches?interviewers=Interviewer test,Interviewer test2 |                                                                                                                                                      | {   "day": "2019/05/04",   "from": "13PM",   "to": "14PM" }, {  "day": "2019/05/04",    "from": "14PM",    "to": "15PM",}, |   |
+| Description | Endpoint | Body | Response |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| insert Candidates | POST http://localhost:9000/candidates | {"name": "Candidate test", "availability": [   {"day":"2019/05/04", "from":"1pm", "to":"4pm"},   {"day":"2019/05/05", "from":"9am", "to":"2pm"}, ] } |  |
+| insert Interviewers | POST http://localhost:9000/interviewers | {"name": "Interviewer test", "availability": [ {"day":"2019/05/04", "from":"2pm", "to":"3pm"}, {"day":"2019/05/05", "from":"8am", "to":"10am"} ] } |  |
+| get interview time slot matches | GET http://localhost:3000/candidates/${candidateId}/matches?interviewers=Interviewer test,Interviewer test2 |  | {   "day": "2019/05/04",   "from": "13PM",   "to": "14PM" }, {  "day": "2019/05/04",    "from": "14PM",    "to": "15PM"} |
 
 Recommended software to make API requests: Postman<br>Get postman free: https://www.getpostman.com/apps
 
