@@ -1,7 +1,7 @@
 # interview-calendar-API
 A simple interview calendar API
 
-# Requirements to run the API
+## Requirements to run the API
 * Docker -> (https://www.docker.com/)
 
 ## Installation
@@ -15,12 +15,12 @@ Go to the project folder and run the following command:
 ## Usage
 After installation make the requests to the following endpoints:
 
-## The following link contains all of the API available endpoint with Examples:
+### The following link contains all of the API available endpoint with Examples:
 
-### https://documenter.getpostman.com/view/2007242/S11NPHWg
+#### https://documenter.getpostman.com/view/2007242/S11NPHWg
 
 
-### This Software was buit using the following technologies:
+## This Software was buit using the following technologies:
 - Docker
 - Node.js
 - MongoDB
